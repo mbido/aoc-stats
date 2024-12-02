@@ -1,2 +1,6 @@
 # aoc-stats
-A card for aoc stats to put in a readme
+Une carte de statistiques Advent of Code pour votre README
+
+## Utilisation
+
+Ajoutez cette image à votre README en utilisant le lien suivant :
