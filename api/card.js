@@ -9,7 +9,7 @@ export default function handler(req, res) {
   const offset = circumference - (percentage / 100 * circumference);
 
   // Lecture du template HTML
-  const svg = `<svg width="500" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color: #0f0f0f;">
+  const svg = `<svg width="500" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color: #0f0f0f; border: 1px solid white;">
     <rect width="500" height="250" fill="#0f0f0f" rx="10" />
     <defs>
       <path id="star-icon" d="M12 0l3.7 7.5 8.3 1.2-6 5.8 1.4 8.3-7.4-3.9-7.4 3.9 1.4-8.3-6-5.8 8.3-1.2z" />
