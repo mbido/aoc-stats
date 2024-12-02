@@ -18,7 +18,7 @@ export default function handler(req, res) {
     <g transform="translate(30, 65)">
       <use href="#star-icon" transform="translate(0, -16) scale(0.7)" fill="#F1E05A" />
       <text x="30" font-size="14px" font-weight="600" fill="#A9FEF6" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">Total stars: <tspan x="170" fill="#F1E05A">${totalStars}</tspan></text>
-      <use href="#star-icon" transform="translate(0, 14) scale(0.7)" fill="none" stroke="#F1E05A" stroke-width="2" />
+      <use href="#star-icon" transform="translate(0, 14) scale(0.65)" fill="none" stroke="#F1E05A" stroke-width="1.5" />
       <text x="30" y="25" font-size="14px" font-weight="600" fill="#A9FEF6" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">Stars this year: <tspan x="170" y="25" fill="#F1E05A">${currentYearStars}</tspan></text>
       <path transform="translate(0, 39) scale(0.7)" fill="#F1E05A" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z" />
       <text x="30" y="50" font-size="14px" font-weight="600" fill="#A9FEF6" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">Current day: <tspan x="170" y="50" fill="#A9FEF6">${currentDay}</tspan></text>
