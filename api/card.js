@@ -4,7 +4,7 @@ export default function handler(req, res) {
   // Calcul du pourcentage et de la progression du cercle
   const totalDays = 25;
   const percentage = (parseInt(completedDays) / totalDays) * 100;
-  const radius = 45;
+  const radius = 40;  // Modifié de 45 à 40
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percentage / 100 * circumference);
 
@@ -28,8 +28,8 @@ export default function handler(req, res) {
       <text x="30" y="120" font-size="16px" fill="#A9FEF6" font-family="Arial, sans-serif">Year: <tspan x="170" y="120" fill="#D93B7D">${currentYear}</tspan></text>
     </g>
     <g transform="translate(390, 130)">
-      <circle r="45" fill="none" stroke="#441E37" stroke-width="12" />
-      <circle r="45" fill="none" stroke="#D93B7D" stroke-width="12" stroke-linecap="round" transform="rotate(-90)" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" />
+      <circle r="40" fill="none" stroke="#441E37" stroke-width="6" />
+      <circle r="40" fill="none" stroke="#D93B7D" stroke-width="6" stroke-linecap="round" transform="rotate(-90)" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" />
       <text x="0" y="15" text-anchor="middle" font-size="38px" fill="#A9FEF6" font-family="Arial, sans-serif" font-weight="bold">${completedDays}</text>
     </g>
   </svg>`;
