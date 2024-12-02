@@ -9,12 +9,12 @@ export default function handler(req, res) {
   const offset = circumference - (percentage / 100 * circumference);
 
   // Lecture du template HTML
-  const svg = `<svg width="500" height="250" xmlns="http://www.w3.org/2000/svg" style="background-color: #13111C; border: 1px solid white; border-radius: 5px;">
-    <rect width="500" height="250" fill="#13111C" rx="5" />
+  const svg = `<svg width="502" height="252" xmlns="http://www.w3.org/2000/svg">
+    <rect x="1" y="1" width="500" height="250" fill="#13111C" rx="5" stroke="white" stroke-width="1"/>
     <defs>
       <path id="star-icon" d="M12 0l3.7 7.5 8.3 1.2-6 5.8 1.4 8.3-7.4-3.9-7.4 3.9 1.4-8.3-6-5.8 8.3-1.2z" />
     </defs>
-    <text x="30" y="45" font-size="26px" fill="#e84393" font-family="Arial, sans-serif" font-weight="bold">${username} Stats</text>
+    <text x="30" y="45" font-size="26px" fill="#e84393" font-family="Arial, sans-serif" font-weight="bold">${username}'s AoC Stats</text>
     <g transform="translate(30, 85)">
       <use href="#star-icon" transform="translate(0, -16) scale(0.8)" fill="#ffd700" />
       <text x="30" font-size="16px" fill="#81A1C1" font-family="Arial, sans-serif">Total stars: <tspan fill="#ffd700">${totalStars}</tspan></text>
