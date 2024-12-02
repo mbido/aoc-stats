@@ -30,7 +30,7 @@ export default function handler(req, res) {
     <g transform="translate(350, 100)">
       <circle r="40" fill="none" stroke="#441E37" stroke-width="6" />
       <circle r="40" fill="none" stroke="#D93B7D" stroke-width="6" stroke-linecap="round" transform="rotate(-90)" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}" />
-      <text x="0" y="15" text-anchor="middle" font-size="32px" font-weight="600" fill="#A9FEF6" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">${completedDays}</text>
+      <text x="0" y="10" text-anchor="middle" font-size="32px" font-weight="600" fill="#A9FEF6" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif">${completedDays}</text>
     </g>
   </svg>`;
 
